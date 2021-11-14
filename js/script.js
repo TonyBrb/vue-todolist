@@ -17,20 +17,33 @@ Predisporre un campo di input testuale e un pulsante “aggiungi”: cliccando s
 const app = new Vue ({
   el: '#app',
 
-  data:{
+  data: {
     toDoList:[
       {
         text: 'allenamento',
-        done: 'false'
-      }
+        done: true
+      },
       {
         text: 'comprare nuovo pc',
-        done: 'false'
-      }
+        done: false
+      },
       {
         text: 'comprare le zeppole',
-        done: 'false'
+        done: false
       }
     ]
+    
+  },
+
+  methods: {
+    barraThing(){
+      for(let i=0; i < this.toDoList.length; i++){
+        if (this.toDoList.done == 'false') {
+          this.toDoList.text += 'barrato';
+        }
+      }
+    }
   }
 });
+
+

@@ -40,3 +40,23 @@ body{
 #app ul{
   list-style: none;
 }
+
+#app ul li{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+
+#app ul li i{
+  opacity: .5;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#app ul li i:hover{
+  opacity: 1;
+}
+
+#app ul li .barrato{
+  text-decoration: line-through;
+}
