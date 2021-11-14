@@ -31,15 +31,23 @@ const app = new Vue ({
         text: 'comprare le zeppole',
         done: false
       }
-    ]
+    ],
+
+    thingToDo:{
+      text:'',
+      done: false
+    }
     
   },
 
   methods: {
     removeThing(index){
       this.toDoList.splice(index,1);
+    },
+
+    addThing(){
+      this.toDoList.push(this.thingToDo);
+      this.thingToDo.text ='';
     }
   }
 });
-
-
