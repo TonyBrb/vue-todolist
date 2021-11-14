@@ -36,12 +36,8 @@ const app = new Vue ({
   },
 
   methods: {
-    barraThing(){
-      for(let i=0; i < this.toDoList.length; i++){
-        if (this.toDoList.done == 'false') {
-          this.toDoList.text += 'barrato';
-        }
-      }
+    removeThing(index){
+      this.toDoList.splice(index,1);
     }
   }
 });

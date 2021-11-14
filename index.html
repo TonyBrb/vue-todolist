@@ -19,7 +19,7 @@
       <li v-for = "(thing,index) in toDoList">
         <p v-if="thing.done">{{thing.text}}</p>
         <p v-else  class="barrato">{{thing.text}}</p>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times" @click="removeThing(index)"></i>
       </li>
     </ul>
   </div>
