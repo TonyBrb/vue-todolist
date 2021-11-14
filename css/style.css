@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: lightgrey;
+}
+
+#app{
+  padding-top: 50px;
+  width: 500px;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+#app h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+#app input{
+  width: 80%;
+  line-height: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#app button{
+  width: 19%;
+  height: 50px;
+  border-radius: 10px;
+  background-color:lightseagreen;
+}
+
+#app ul{
+  list-style: none;
+}
