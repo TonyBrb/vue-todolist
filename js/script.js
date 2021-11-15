@@ -33,10 +33,7 @@ const app = new Vue ({
       }
     ],
 
-    thingToDo:{
-      text:'',
-      done: false
-    }
+    stringToDo: ''
     
   },
 
@@ -45,9 +42,13 @@ const app = new Vue ({
       this.toDoList.splice(index,1);
     },
 
-    addThing(){
-      this.toDoList.push(this.thingToDo);
-      this.thingToDo.text ='';
+   addThing(){
+      const thingToDo = {
+        text: this.stringToDo,
+        done: false
+      };
+      this.toDoList.push(thingToDo);
+      this.stringToDo='';
     }
   }
 });
